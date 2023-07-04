@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*--Home--*/
 .Universo {
   color: white;
@@ -31,6 +36,7 @@
   background-color: #00097cf6;
   width: 100%;
 }
+
 
 /*--Categoria--*/
 .Cat {
@@ -163,7 +169,7 @@
 }
 
 .imagem-selecionada img {
-  width:90%;
+  width: 90%;
   margin-top: 50px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -243,7 +249,6 @@
 }
 
 
-/*NAVBAR TESTE*/
 /* Estilos CSS padrão */
 /* Estilos CSS padrão */
 
@@ -345,7 +350,7 @@
 .product-name {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   font-size: 1.25rem;
   font-weight: bold;
   margin: 10px 0;
@@ -432,10 +437,6 @@
 
 /*Carrinho de compras*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .Carrinho {
   cursor: default;
@@ -557,6 +558,7 @@ tbody td {
 
 aside {
   margin-left: 30px;
+  cursor: default;
 }
 
 aside .box {
@@ -630,36 +632,20 @@ aside>button:hover {
 
 /*MODAL*/
 
-  .Modal {
-    background-color: #fff;
-    margin: 0;
-    transform: translateY(0px);
-    min-width: 0;
-    max-width: 100%;
-    padding: 0;
-    box-shadow: 0 0 14px 0 rgba(15,17,17,.5);
+.Modal {
+  background-color: #fff;
+  margin: 0;
+  transform: translateY(0px);
+  min-width: 0;
+  max-width: 100%;
+  padding: 0;
+  box-shadow: 0 0 14px 0 rgba(15, 17, 17, .5);
 }
 
 /*CONTEÚDO MODAL*/
 
-.Modal header {
-  background-color: #f0f2f2;
-  display: flex;
-  padding: 16px 0;
-  min-height: 56px;
-  margin-right: 28px;
-  line-height: 24px;
-  font-size: 16px;
-  margin: 1rem;
-  justify-content:space-between;
-}
 
-.Modal hr{
-  margin-bottom: 5px;
-
-}
-
-.Modal button {
+.modalbButton {
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -667,20 +653,52 @@ aside>button:hover {
   border: 0;
 }
 
-.Modal form{
-  margin: 10px;
-  padding: 10px;
+.cardFlags {
+  display: flex;
+  width: 12rem;
+  height: 2rem;
+  margin-top: 0;
+  margin-left: 28%;
+  margin-bottom: 10px;
 }
 
-.Modal label {
-  padding: 5;
-  text-align: right;
-  display: inline-block;
+.contentModal {
+  background-color: #efefef;
+  box-sizing: border-box;
+  padding-top: 3px;
+  border-radius: 2%;
 }
 
-.Modal input {
-  margin: 2px;
-  margin-left: 50px;
+.inputCard {
+  position: relative;
+  margin: 20px 0;
+  
+}
+
+.inputCard label {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.2s;
+  cursor: text;
+  padding-left: 5px;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  font-size: 17px;
+  outline: none;
+  border-radius: 8px;
+}
+
+form .inputCard .input:focus~label,
+form .inputCard .input:valid~label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #666666;
 }
 
 

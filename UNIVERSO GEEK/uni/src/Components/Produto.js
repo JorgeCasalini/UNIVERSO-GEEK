@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 
 
-//Importei a function HandleAddItem, mas falta colocar funcionalidade a ela
 
-const Produto = ({ handleAddItem }) => {
-    const [quantidade, setQuantidade] = useState(0);
+const Produto = ({ handleAddItem, }) => {
+    const [quantidade, setQuantidade] = useState(1);
 
     const aumentarQuantidade = () => {
         setQuantidade(quantidade + 1);
@@ -13,12 +12,14 @@ const Produto = ({ handleAddItem }) => {
 
     const diminuirQuantidade = () => {
         if (quantidade > 0) {
-            if(quantidade === 1){
+            if (quantidade === 1) {
                 return;
             }
             setQuantidade(quantidade - 1);
         }
     };
+
+
 
     return (
         <body className="body-Produto">
@@ -41,7 +42,7 @@ const Produto = ({ handleAddItem }) => {
                                     Eu sei que gostou, não resista. Venha para o lado negro da força, e use sua força!!
                                 </p>
                                 <div className="prices">
-                                    <span class="original-price">R$69.99</span>
+                                    <span class="original-price">R$69,99</span>
                                     <span class="discount-price">R$45.99</span>
 
                                 </div>
@@ -73,7 +74,7 @@ const Produto = ({ handleAddItem }) => {
                     </div>
 
                 </section>
-                <br/>
+                <br />
                 <div className="Linha-Produto" />
                 <div>
                     <h2 class="text-center mb-4">Lançamentos
@@ -118,7 +119,7 @@ const Produto = ({ handleAddItem }) => {
                     </div>
                 </div>
             </main>
-            <br/>
+            <br />
             <Footer />
 
         </body>

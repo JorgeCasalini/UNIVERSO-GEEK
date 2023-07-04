@@ -9,6 +9,7 @@ import axios from "axios";
 
 const api = axios.create({
   baseURL: "https://universogeek-api.azurewebsites.net/api/v1"
+
 });
 
 function randomNumber(min, max) {
